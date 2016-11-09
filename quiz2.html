@@ -1,41 +1,64 @@
-<doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-400000">
-	
-</head>
-<body>
-	<h1>Welcome To The Wonderful World of Debugging Code</h1>
+<!doctype html>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+    <link href="css/quiz2.css" rel="stylesheet">
+    <title>Quiz 2</title>
+  </head>
+  <body>
+  	<h1>Welcome To The Wonderful World of Debugging Code</h1>
+    <div id=message>
+      There is a secret <button id="secret" onclick="surprise()">button</button> on this page that runs my custom function.
+      Good luck finding it (or just look at the source)
+    </div>
+    <section id="mainSection">
+  		<p>This is a paragraph, I promise.</p>
 
-	<section id="mainSection">
-		<p>This is a paragraph, I promise.</p
+  		<ul class="links">
+  			<li>
+  				<a href="#">Link 1<a>
+  			</li>
+  			<li>
+  				<a href="#">Link 2</a>
+  			</li>
+  			<li>
+  				<a href="#">Link 487</a>
+  			</li>
+  		</ul>
+    </section>
 
-		<ul class="links">
-			<li>
-				<a>Link 1<a>
-			</li>
-			<li>
-				<a href="#">Link 2</a>
-			</li>
-			<li>
-				<a href="#">Link 487
-			</li>
-		</ul>
-	
+  	<p>I am a lonely paragraph, with no immediate parent.</p>
+    <button class="accord">But I Have</button>
+    <div class="asect">
+      <p>I'm a link to an accordion store's website (that could really benefit from this course) inside of an accordion:</p>
+      <a href="http://www.accordionsandkeyboards.net/">Accordian Link</a>
+    </div>
 
-	<p>I am a lonely paragraph, with no immediate parent.</p>
+    <button class="accord">An Accordian</button>
+    <div class="asect">
+      <p>I'm a paragraph about accordions inside of an accordion:</p>
+      <p>Accordions (from 19th-century German Akkordeon, from Akkord—"musical chord, concord of sounds"[1]) are a family of box-shaped musical instruments of the bellows-driven free-reed aerophone type, colloquially referred to as a squeezebox. A person who plays the accordion is called an accordionist. The concertina and bandoneón are related; the harmonium and American reed organ are in the same family.</p>
+    </div>
 
-	<section id=secondarySection>
-		<p>Woop woop!!!</p>
-		<p>See how elegantly we're spaced out?</p>
-		<p>Yeah, we're spaced out alright.<//p>
-		
-		<ol>
-			<li>I'm like an unordered list</li>	
-			<li>But I'm more orderly<li>
-			<li>That was a really bad joke.</li>
-		<ol>
-	</section>
-	
-</body>
+    <button class="accord">To Keep Me Company</button>
+    <div class="asect">
+      <p>And I'm a picture of an accordion inside an accordion:</p>
+      <img src="http://media.guitarcenter.com/is/image/MMGS7/72-Bass-Entry-Level-Piano-Accordion-Red/J02738000001000-00-500x500.jpg" alt="Accordion">
+    </div>
+
+  	<section id=secondarySection>
+  		<p>Woop woop!!!</p>
+  		<p>See how elegantly we're spaced out?</p>
+  		<p>Yeah, we're spaced out alright.</p>
+
+  		<ol>
+  			<li>I'm like an unordered list</li>
+  			<li>But I'm more orderly</li>
+  			<li>That was a really bad joke.</li>
+  		</ol>
+  	</section>
+    <button onclick="fadeAway()">Click to Leave</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/quiz2.js"></script>
+  </body>
 </hmtl>
